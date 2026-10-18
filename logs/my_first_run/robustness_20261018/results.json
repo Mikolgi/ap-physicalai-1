@@ -1,0 +1,1067 @@
+[
+  {
+    "kind": "baseline",
+    "cube_x": null,
+    "cube_y": null,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 10,
+    "mean_reward": 1503.95,
+    "source": "fresh original CLI, seed=42"
+  },
+  {
+    "kind": "position_control",
+    "cube_x": 0.7,
+    "cube_y": 0.0,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 10,
+    "mean_reward": 1498.1492883563042,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1547.1070262789726,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0059599253564332
+      },
+      {
+        "episode": 2,
+        "reward": 1454.5101686120033,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.011847652792982256
+      },
+      {
+        "episode": 3,
+        "reward": 1538.003197669983,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.006117821186969645
+      },
+      {
+        "episode": 4,
+        "reward": 1269.3767070174217,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0404440000427523
+      },
+      {
+        "episode": 5,
+        "reward": 1593.8115676045418,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.003887812059600545
+      },
+      {
+        "episode": 6,
+        "reward": 1592.3714925646782,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.004794063964234412
+      },
+      {
+        "episode": 7,
+        "reward": 1538.4454696178436,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.004727074851324651
+      },
+      {
+        "episode": 8,
+        "reward": 1366.4637945890427,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.025226164297656662
+      },
+      {
+        "episode": 9,
+        "reward": 1505.1465781927109,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.011220231337695705
+      },
+      {
+        "episode": 10,
+        "reward": 1576.256881415844,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.003718159218972537
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.2,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 10,
+    "mean_reward": 1384.2051558732987,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1539.5238636732101,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.008241686861581476
+      },
+      {
+        "episode": 2,
+        "reward": 1452.5249266028404,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.011564370888336228
+      },
+      {
+        "episode": 3,
+        "reward": 1543.2820947766304,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.005594024644813633
+      },
+      {
+        "episode": 4,
+        "reward": 1255.7827109098434,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.041629465409545686
+      },
+      {
+        "episode": 5,
+        "reward": 1535.0809518098831,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.004488466610699152
+      },
+      {
+        "episode": 6,
+        "reward": 1522.5174804329872,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.008521227130674216
+      },
+      {
+        "episode": 7,
+        "reward": 1541.5970560908318,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.005288205961654204
+      },
+      {
+        "episode": 8,
+        "reward": 1337.3124969601631,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.027808811470655583
+      },
+      {
+        "episode": 9,
+        "reward": 583.0591976046562,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.005109065020186261
+      },
+      {
+        "episode": 10,
+        "reward": 1531.3707798719406,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.004379381518889219
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.25,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 10,
+    "mean_reward": 1365.6411266684531,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1557.9967923760414,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0017894164958406479
+      },
+      {
+        "episode": 2,
+        "reward": 1429.3106989860535,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.009437493643444116
+      },
+      {
+        "episode": 3,
+        "reward": 1506.5906940698624,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.006908182000886634
+      },
+      {
+        "episode": 4,
+        "reward": 1241.1881694793701,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.047184392107570694
+      },
+      {
+        "episode": 5,
+        "reward": 1522.8444214463234,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007506750512548772
+      },
+      {
+        "episode": 6,
+        "reward": 1487.033881366253,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.011727672368064837
+      },
+      {
+        "episode": 7,
+        "reward": 1518.251156926155,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0053260768407114205
+      },
+      {
+        "episode": 8,
+        "reward": 1309.340897321701,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.03089138435149571
+      },
+      {
+        "episode": 9,
+        "reward": 571.8905316591263,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.012016905352549833
+      },
+      {
+        "episode": 10,
+        "reward": 1511.964023053646,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.006042302645993188
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.3,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 9,
+    "mean_reward": 1251.5628468692303,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1518.0039597153664,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007965546656177786
+      },
+      {
+        "episode": 2,
+        "reward": 582.0451842546463,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.00635729046272664
+      },
+      {
+        "episode": 3,
+        "reward": 1485.8914620280266,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.002543848680918403
+      },
+      {
+        "episode": 4,
+        "reward": 1158.9616605639458,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.05283421877870256
+      },
+      {
+        "episode": 5,
+        "reward": 1489.9814945459366,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.010939580993788221
+      },
+      {
+        "episode": 6,
+        "reward": 584.3517058491707,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007854102638533518
+      },
+      {
+        "episode": 7,
+        "reward": 1498.2317225933075,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0033837419384082075
+      },
+      {
+        "episode": 8,
+        "reward": 1250.423927783966,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.03400115220936318
+      },
+      {
+        "episode": 9,
+        "reward": 1457.7610127925873,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.008240766759998788
+      },
+      {
+        "episode": 10,
+        "reward": 1489.9763385653496,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.008962681299603852
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.35,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 8,
+    "mean_reward": 1297.2840521991252,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1498.7645069360733,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.005982253000203044
+      },
+      {
+        "episode": 2,
+        "reward": 1376.2883685827255,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.010967286271992093
+      },
+      {
+        "episode": 3,
+        "reward": 1471.374674797058,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.004283611009875692
+      },
+      {
+        "episode": 4,
+        "reward": 1089.4249056577682,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.06385293912291747
+      },
+      {
+        "episode": 5,
+        "reward": 1450.780125260353,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.01107137957868231
+      },
+      {
+        "episode": 6,
+        "reward": 1479.0043944120407,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0038954114765313835
+      },
+      {
+        "episode": 7,
+        "reward": 1462.1930100917816,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0024754532874854836
+      },
+      {
+        "episode": 8,
+        "reward": 1286.9178867340088,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.027655862824819532
+      },
+      {
+        "episode": 9,
+        "reward": 1418.2275148034096,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.006802532725163784
+      },
+      {
+        "episode": 10,
+        "reward": 439.86513471603394,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.5843473281250482
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.4,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 8,
+    "mean_reward": 1255.4994204759598,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1470.728609919548,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.00715384416929429
+      },
+      {
+        "episode": 2,
+        "reward": 512.6862978935242,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.4680074090487034
+      },
+      {
+        "episode": 3,
+        "reward": 1444.2269359230995,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.006168903793761724
+      },
+      {
+        "episode": 4,
+        "reward": 955.6960582733154,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.052511177812936884
+      },
+      {
+        "episode": 5,
+        "reward": 1293.3095160126686,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.032405564906065165
+      },
+      {
+        "episode": 6,
+        "reward": 1434.1450794935226,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0031420618055934824
+      },
+      {
+        "episode": 7,
+        "reward": 1390.7613950967789,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007400027628440135
+      },
+      {
+        "episode": 8,
+        "reward": 1228.8813461065292,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.03423813304197439
+      },
+      {
+        "episode": 9,
+        "reward": 1395.5797457695007,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007268776971601629
+      },
+      {
+        "episode": 10,
+        "reward": 1428.9792202711105,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007615884047989363
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.45,
+    "obs_noise": 0.0,
+    "grasps": 10,
+    "successes": 9,
+    "mean_reward": 1255.9964983582497,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1402.3879835605621,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.013355303670732335
+      },
+      {
+        "episode": 2,
+        "reward": 1303.3686180114746,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.010477640872252092
+      },
+      {
+        "episode": 3,
+        "reward": 1392.8594517409801,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.010063280087824132
+      },
+      {
+        "episode": 4,
+        "reward": 487.53898525238037,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.3282869009901092
+      },
+      {
+        "episode": 5,
+        "reward": 1371.9462105631828,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.015483505352686184
+      },
+      {
+        "episode": 6,
+        "reward": 1343.3877329230309,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.013315286776300683
+      },
+      {
+        "episode": 7,
+        "reward": 1361.7365301251411,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.011263394466400923
+      },
+      {
+        "episode": 8,
+        "reward": 1154.0943831205368,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.0373400413208524
+      },
+      {
+        "episode": 9,
+        "reward": 1357.152749478817,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007827209459386007
+      },
+      {
+        "episode": 10,
+        "reward": 1385.4923388063908,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.00758184769487394
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.5,
+    "obs_noise": 0.0,
+    "grasps": 8,
+    "successes": 7,
+    "mean_reward": 1048.5951947152614,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1264.528317809105,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.03067058448066252
+      },
+      {
+        "episode": 2,
+        "reward": 1267.9956942796707,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.006437949518581141
+      },
+      {
+        "episode": 3,
+        "reward": 1350.8193756341934,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.009627152553543905
+      },
+      {
+        "episode": 4,
+        "reward": 472.9023474752903,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.636297553468711
+      },
+      {
+        "episode": 5,
+        "reward": 470.36845940351486,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.625095749608269
+      },
+      {
+        "episode": 6,
+        "reward": 1298.4922913014889,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.008955578914110125
+      },
+      {
+        "episode": 7,
+        "reward": 1321.6785857081413,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.007670281126280525
+      },
+      {
+        "episode": 8,
+        "reward": 469.25846415758133,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.5238321131065327
+      },
+      {
+        "episode": 9,
+        "reward": 1308.0516619086266,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.00622668713077037
+      },
+      {
+        "episode": 10,
+        "reward": 1261.8567494750023,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.01411817242280779
+      }
+    ]
+  },
+  {
+    "kind": "noise",
+    "cube_x": null,
+    "cube_y": null,
+    "obs_noise": 0.02,
+    "grasps": 7,
+    "successes": 5,
+    "mean_reward": 948.1904971718789,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 1257.3975740075111,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.05469877587870155
+      },
+      {
+        "episode": 2,
+        "reward": 1487.0228013396263,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.016940607232659045
+      },
+      {
+        "episode": 3,
+        "reward": 511.734092772007,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.3780186160226951
+      },
+      {
+        "episode": 4,
+        "reward": 1212.129629611969,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.0716693109838544
+      },
+      {
+        "episode": 5,
+        "reward": 559.2162737250328,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.03863200869875845
+      },
+      {
+        "episode": 6,
+        "reward": 1564.701592028141,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.021502999317623405
+      },
+      {
+        "episode": 7,
+        "reward": 296.47736632823944,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.34722473511494
+      },
+      {
+        "episode": 8,
+        "reward": 550.867088496685,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.049293713143588096
+      },
+      {
+        "episode": 9,
+        "reward": 484.36872404813766,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.6174024296349474
+      },
+      {
+        "episode": 10,
+        "reward": 1557.9898293614388,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.01292018847337078
+      }
+    ]
+  },
+  {
+    "kind": "noise",
+    "cube_x": null,
+    "cube_y": null,
+    "obs_noise": 0.05,
+    "grasps": 3,
+    "successes": 1,
+    "mean_reward": 595.5981875419617,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 432.7394115328789,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.3013213118777193
+      },
+      {
+        "episode": 2,
+        "reward": 1359.7006471157074,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.03324045110629712
+      },
+      {
+        "episode": 3,
+        "reward": 507.02101135253906,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.3135859990558157
+      },
+      {
+        "episode": 4,
+        "reward": 464.67071437835693,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.5597197798541861
+      },
+      {
+        "episode": 5,
+        "reward": 517.2040994167328,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.5265155009529388
+      },
+      {
+        "episode": 6,
+        "reward": 761.8224548101425,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.43657339703069825
+      },
+      {
+        "episode": 7,
+        "reward": 443.34171175956726,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.6017915623211548
+      },
+      {
+        "episode": 8,
+        "reward": 477.8305726647377,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.3804966317178037
+      },
+      {
+        "episode": 9,
+        "reward": 473.62539702653885,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.6115551037321956
+      },
+      {
+        "episode": 10,
+        "reward": 518.0258553624153,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.310699798322417
+      }
+    ]
+  },
+  {
+    "kind": "noise",
+    "cube_x": null,
+    "cube_y": null,
+    "obs_noise": 0.035,
+    "grasps": 4,
+    "successes": 4,
+    "mean_reward": 887.9557840168476,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 534.0601050853729,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.26471473208025287
+      },
+      {
+        "episode": 2,
+        "reward": 1468.6644896268845,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.03028657709263104
+      },
+      {
+        "episode": 3,
+        "reward": 527.8988554477692,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.4298909814707712
+      },
+      {
+        "episode": 4,
+        "reward": 503.4278963804245,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.367748060279077
+      },
+      {
+        "episode": 5,
+        "reward": 1475.526379942894,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.017327179277153965
+      },
+      {
+        "episode": 6,
+        "reward": 1514.2372134923935,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.02659417474925516
+      },
+      {
+        "episode": 7,
+        "reward": 478.4421606063843,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.39078761991433486
+      },
+      {
+        "episode": 8,
+        "reward": 526.563073694706,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.3938364431246343
+      },
+      {
+        "episode": 9,
+        "reward": 1397.7305958867073,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.031838586153329566
+      },
+      {
+        "episode": 10,
+        "reward": 453.00707000494003,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.49510130791302553
+      }
+    ],
+    "video": "logs/my_first_run/robustness_20261018/exp3_noise.mp4"
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.55,
+    "obs_noise": 0.0,
+    "grasps": 2,
+    "successes": 1,
+    "mean_reward": 426.0490507274866,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 416.5764195024967,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.5220166186752945
+      },
+      {
+        "episode": 2,
+        "reward": 510.85509222745895,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.048103840587678505
+      },
+      {
+        "episode": 3,
+        "reward": 495.79220283031464,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.2706601086781326
+      },
+      {
+        "episode": 4,
+        "reward": 440.51189401745796,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.6835826824998621
+      },
+      {
+        "episode": 5,
+        "reward": 325.76414000988007,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.7482156937776577
+      },
+      {
+        "episode": 6,
+        "reward": 463.2379930615425,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.62057657861292
+      },
+      {
+        "episode": 7,
+        "reward": 424.7234986424446,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.6433621111793728
+      },
+      {
+        "episode": 8,
+        "reward": 365.5724075436592,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.7721935221835995
+      },
+      {
+        "episode": 9,
+        "reward": 371.6136441528797,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 1.0025647903699708
+      },
+      {
+        "episode": 10,
+        "reward": 445.8432152867317,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.7011767721662724
+      }
+    ]
+  },
+  {
+    "kind": "position",
+    "cube_x": 0.7,
+    "cube_y": 0.525,
+    "obs_noise": 0.0,
+    "grasps": 5,
+    "successes": 4,
+    "mean_reward": 764.7361512571573,
+    "episodes": [
+      {
+        "episode": 1,
+        "reward": 390.87501978874207,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.5904887625741214
+      },
+      {
+        "episode": 2,
+        "reward": 1203.4752148389816,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.012877174450351392
+      },
+      {
+        "episode": 3,
+        "reward": 1019.7078506052494,
+        "grasp": true,
+        "success": false,
+        "final_pos_err": 0.09697315289535881
+      },
+      {
+        "episode": 4,
+        "reward": 455.948521733284,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.6606456015108819
+      },
+      {
+        "episode": 5,
+        "reward": 955.4927038550377,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.004093116169036999
+      },
+      {
+        "episode": 6,
+        "reward": 447.49554693698883,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.5512571553026513
+      },
+      {
+        "episode": 7,
+        "reward": 1196.0042023658752,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.01998721508777536
+      },
+      {
+        "episode": 8,
+        "reward": 322.92629835009575,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.7669136676942804
+      },
+      {
+        "episode": 9,
+        "reward": 1269.4035644829273,
+        "grasp": true,
+        "success": true,
+        "final_pos_err": 0.010113914187857174
+      },
+      {
+        "episode": 10,
+        "reward": 386.0325896143913,
+        "grasp": false,
+        "success": false,
+        "final_pos_err": 0.624460905047324
+      }
+    ],
+    "video": "logs/my_first_run/robustness_20261018/exp2_far.mp4"
+  }
+]
