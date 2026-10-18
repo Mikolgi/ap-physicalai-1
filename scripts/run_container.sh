@@ -5,6 +5,22 @@ WORKDIR="/workspace"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 ENV_DIR="$PROJECT_DIR/environment"
+
+# Git Bash on Windows converts Linux-looking arguments passed to docker.exe.
+# Convert host paths explicitly and disable MSYS path rewriting inside this script.
+# This does not change the user's Git Bash settings outside this script.
+case "$(uname -s)" in
+  MINGW*|MSYS*)
+    HOST_PROJECT_DIR="$(cygpath -m "$PROJECT_DIR")"
+    HOST_ENV_DIR="$(cygpath -m "$ENV_DIR")"
+    export MSYS_NO_PATHCONV=1
+    ;;
+  *)
+    HOST_PROJECT_DIR="$PROJECT_DIR"
+    HOST_ENV_DIR="$ENV_DIR"
+    ;;
+esac
+
 REBUILD=false
 RESTART=false
 FORCE_CPU=false
@@ -33,10 +49,10 @@ fi
 if $FORCE_GPU; then
   if ! $NVIDIA_OK; then
     echo "╔═══════════════════════════════════════════════════════════╗"
-    echo "║  Запрошен --gpu, но nvidia-smi недоступен на хосте.      ║"
-    echo "║  Нужны драйвер NVIDIA и Container Toolkit:               ║"
-    echo "║  https://docs.nvidia.com/datacenter/cloud-native/        ║"
-    echo "║  container-toolkit/install-guide.html                    ║"
+    echo "║  Запрошен --gpu, но nvidia-smi недоступен на хосте.       ║"
+    echo "║  Нужны драйвер NVIDIA и Container Toolkit:                ║"
+    echo "║  https://docs.nvidia.com/datacenter/cloud-native/         ║"
+    echo "║  container-toolkit/latest/install-guide.html             ║"
     echo "╚═══════════════════════════════════════════════════════════╝"
     exit 1
   fi
@@ -91,11 +107,15 @@ print_connect_info() {
   echo ""
 }
 
+build_image() {
+  docker build --network host -t "$IMAGE" -f "$HOST_ENV_DIR/$DOCKERFILE" "$HOST_PROJECT_DIR"
+}
+
 if $REBUILD; then
   echo "==> Останавливаю контейнер ${CONTAINER}..."
   docker rm -f "$CONTAINER" 2>/dev/null || true
   echo "==> Пересобираю образ..."
-  docker build -t "$IMAGE" -f "$ENV_DIR/$DOCKERFILE" "$PROJECT_DIR" --network host
+  build_image
 elif $RESTART; then
   echo "==> Перезапускаю контейнер..."
   docker rm -f "$CONTAINER" 2>/dev/null || true
@@ -103,7 +123,7 @@ fi
 
 if ! image_exists; then
   echo "==> Образ не найден, собираю ${IMAGE}..."
-  docker build -t "$IMAGE" -f "$ENV_DIR/$DOCKERFILE" "$PROJECT_DIR" --network host
+  build_image
 fi
 
 if container_running; then
@@ -121,33 +141,33 @@ if container_exists; then
 fi
 
 echo "==> Запускаю новый контейнер ${CONTAINER}..."
-# На Linux используем --network host: порты доступны напрямую, DNS работает корректно.
-# На macOS/Windows Docker Desktop не поддерживает host network — используем -p.
+# On Linux use host networking, as in the original script.
+# On macOS / Windows Docker Desktop use published ports.
 if [ "$(uname -s)" = "Linux" ]; then
-  NETWORK_ARGS="--network host"
-  PORT_ARGS=""
+  NETWORK_ARGS=(--network host)
+  PORT_ARGS=()
 else
-  NETWORK_ARGS=""
-  PORT_ARGS="-p 5900:5900 -p 6080:6080"
+  NETWORK_ARGS=()
+  PORT_ARGS=(-p 5900:5900 -p 6080:6080)
 fi
 
 if $USE_GPU; then
   docker run -d \
     --name "$CONTAINER" \
     --ipc=host \
-    $PORT_ARGS \
-    $NETWORK_ARGS \
+    "${PORT_ARGS[@]}" \
+    "${NETWORK_ARGS[@]}" \
     --gpus all \
     -e NVIDIA_DRIVER_CAPABILITIES=all \
-    -v "$PROJECT_DIR":"$WORKDIR" \
+    --mount "type=bind,source=${HOST_PROJECT_DIR},target=${WORKDIR}" \
     "$IMAGE"
 else
   docker run -d \
     --name "$CONTAINER" \
     --ipc=host \
-    $PORT_ARGS \
-    $NETWORK_ARGS \
-    -v "$PROJECT_DIR":"$WORKDIR" \
+    "${PORT_ARGS[@]}" \
+    "${NETWORK_ARGS[@]}" \
+    --mount "type=bind,source=${HOST_PROJECT_DIR},target=${WORKDIR}" \
     "$IMAGE"
 fi
 
