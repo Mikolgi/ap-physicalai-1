@@ -1,0 +1,59 @@
+{
+  "algorithm": {
+    "class_name": "PPO",
+    "clip_param": 0.2,
+    "desired_kl": 0.01,
+    "entropy_coef": 0.01,
+    "gamma": 0.97,
+    "lam": 0.95,
+    "learning_rate": 0.001,
+    "max_grad_norm": 1.0,
+    "num_learning_epochs": 4,
+    "num_mini_batches": 8,
+    "schedule": "adaptive",
+    "use_clipped_value_loss": true,
+    "value_loss_coef": 1.0
+  },
+  "checkpoint": -1,
+  "empirical_normalization": true,
+  "experiment_name": "test",
+  "load_run": "-1",
+  "max_iterations": 1001,
+  "num_steps_per_env": 40,
+  "resume": false,
+  "resume_path": null,
+  "run_name": "",
+  "runner_class_name": "OnPolicyRunner",
+  "save_interval": 50,
+  "seed": 1,
+  "actor": {
+    "class_name": "rsl_rl.models.mlp_model.MLPModel",
+    "hidden_dims": [
+      512,
+      256,
+      128
+    ],
+    "activation": "elu",
+    "distribution_cfg": {
+      "class_name": "rsl_rl.modules.distribution.GaussianDistribution",
+      "init_std": 1.0
+    }
+  },
+  "critic": {
+    "class_name": "rsl_rl.models.mlp_model.MLPModel",
+    "hidden_dims": [
+      512,
+      256,
+      128
+    ],
+    "activation": "elu"
+  },
+  "obs_groups": {
+    "actor": [
+      "state"
+    ],
+    "critic": [
+      "state"
+    ]
+  }
+}
